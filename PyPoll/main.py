@@ -9,13 +9,13 @@ candidates = []
 voted_candidates = []
 cnt = Counter()
 
-election_csv_path = os.path.join("..","PyPoll", "election_data_1.csv")
+election_csv_path = os.path.join("..","PyPoll", "election_data_2.csv") #<<<<<<<<<<<<<<change file name here>>>>>>>>>>>>>>>>>
 
 #sys.stdout = open('election_results.txt', 'w') #to write directly to file, no printing to the terminal
 
 def fprint(output):
     print(output)
-    with open('election_results.txt', 'a') as f:
+    with open('election_results_2.txt', 'a') as f: #<<<<<<<<<<<<<<change file name here>>>>>>>>>>>>>>>>>
         f.write("{}\n".format(output))
 
 with open(election_csv_path, newline="") as csvfile:
